@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url("/fonts/PlayfairDisplay-Regular.woff");
+}
+a.back{
+    color: black;
+}
+.combination{
+    border: 3px solid rgb(103, 103, 103);
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 3px;
+}
+.variatoin_text{
+    font-size: 30px;
+    font-family: "PlayfairDisplay";
+    color: #F95356;
+    font-weight: 900;
+}
+.minprice{
+    color: #F95356;
+}
+.hotel_card,.event,.sight{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.img {
+    width: 187px; 
+    height: 124px; 
+    object-fit: cover; 
+}
+.btn.arrow a.back:hover{
+    color: blue;
+}
+img.no_results{
+    width: 280px;
+    height: 280px;
+    margin: 15px auto;
+    display: block;
+}
+.sorry{
+    font-size: 35px;
+    text-align: center;
+}
+
+@media(max-width:768px){
+    h3{
+        font-size: 20px!important;
+    }
+    .img{
+        width: 100px; 
+        height: 100px; 
+    }
+    .col-7{
+        width: 90%!important;
+    }
+    p.description,.minprice{
+        font-size: 14px;
+    }
+    .sorry{
+        font-size: 25px;
+    }
+}
+@media(max-width:576px){
+    h3{
+        font-size: 16px!important;
+    }
+    .img{
+        width: 50px; 
+        height: 50px; 
+    }
+    p.description,.minprice{
+        font-size: 10px;
+    }
+    img.no_results{
+        width: 150px;
+        height: 150px;
+        
+    }
+    .sorry{
+        font-size: 20px;
+    }
+}

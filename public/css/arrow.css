@@ -1,0 +1,43 @@
+.scroll-to-top {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    bottom: 20px; /* Небольшое изменение, чтобы отдалить от края */
+    right: 20px; /* Также отдаляем от края для большего удобства */
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    width: 56px; /* Новые базовые размеры */
+    height: 56px;
+    color: #000; /* Цвет иконки/текста, измените при необходимости */
+    align-items: center; /* Для центровки содержимого, если используется flex */
+    justify-content: center; /* Тоже для центровки, если это flex-container */
+    z-index: 10; /* Убедитесь, что кнопка будет поверх других элементов */
+}
+
+/* Стиль для эффекта наведения */
+.scroll-to-top:hover {
+    transform: scale(1.2); 
+    transition: transform 0.3s; 
+}
+
+/* Оптимизация для планшетов */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .scroll-to-top {
+        display: block;
+        width: 54px;
+        height: 54px;
+        bottom: 5px;
+        right: 0px; 
+    }
+}
+
+/* Оптимизация для мобильных устройств */
+@media (max-width: 767px) {
+    .scroll-to-top {
+        display: block; /* Включаем отображение */
+        width: 50px; /* Меньший размер для мобильных устройств */
+        height: 50px;
+        bottom: 15px; /* Немного поднимаем выше, чтобы не перекрывалось интерфейсом браузера */
+        right: 10px;
+    }
+}
